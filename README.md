@@ -6,8 +6,10 @@ node.js
 express
 method-override
 mongoose
-nodemon
 redis
+
+npm i -D 
+nodemon
 
 ## Contenedores Docker:
 
