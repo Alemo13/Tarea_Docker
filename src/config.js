@@ -1,11 +1,7 @@
-const config = {
-    redis: {
-        port: 6379,
-        host: "localhost",
-        retries: 3,
-        time_to_retry: 100,
-        time_live: 3600 
-    }
-}
+const redis = require('redis');
 
-module.exports = config;
+const client = redis.createClient();
+
+client.on('connect', function() {
+    console.log('Redis Database is connected');
+});

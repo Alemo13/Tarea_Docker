@@ -5,5 +5,5 @@ mongoose.connect('mongodb://localhost:27017/Mongo', {
     useUnifiedTopology: true
     
 })
-    .then(db => console.log('Database is Connected'))
+    .then(db => console.log('Mongo Database is Connected'))
     .catch(err => console.log(err));
