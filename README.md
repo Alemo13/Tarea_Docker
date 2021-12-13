@@ -1,11 +1,13 @@
 # Tarea_Docker
 
 ## Dependencias:
+npm i
 node.js
 express
 method-override
 mongoose
 nodemon
+redis
 
 ## Contenedores Docker:
 
