@@ -15,7 +15,7 @@ nodemon
 
 docker run \
 --name Mongo \
---network test \
+--network test-db \
 -d \
 -p 27017:27017 \
 mongo
@@ -27,6 +27,16 @@ docker run \
 -p 6379:6379 \
 redis
 
+## Base de datos docker:
+
+Para visualizar la base de datos desde docker y revisar si estan los registros guardados, usar:
+
+docker exec -it Mongo bash
+mongo
+show dbs
+use reg-app
+show collections
+db.registros.find().pretty()
 
 ## Notas:
 
