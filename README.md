@@ -31,7 +31,7 @@ redis
 
 Para visualizar la base de datos desde docker y revisar si estan los registros guardados, usar:
 
-docker exec -it Mongo bash
+docker exec -it Mongo bash \n
 mongo
 show dbs
 use reg-app
